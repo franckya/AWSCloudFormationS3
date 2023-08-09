@@ -1,4 +1,4 @@
-AWSTemplateFormatVersion: 2023-09-08
+AWSTemplateFormatVersion: "2010-09-09"
 Resources:
   S3Bucket:
     DeletionPolicy: Retain
