@@ -1,0 +1,11 @@
+AWSTemplateFormatVersion: 2023-09-08
+Resources:
+  S3Bucket:
+    Type: AWS::S3::Bucket
+    Description: Create Amazon S3 bucket using CloudFormation
+    Properties:
+      BucketName: mcdns-s3-cloudformation
+Outputs:
+  S3Bucket:
+    Description: S3 bucket created from a CloudFormation template
+    Value: !Ref S3Bucket
