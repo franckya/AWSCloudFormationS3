@@ -1,0 +1,18 @@
+AWSTemplateFormatVersion: 2023-09-08
+Resources:
+  S3Bucket:
+    DeletionPolicy: Retain
+    Type: AWS::S3::Bucket
+    Description: Create Amazon S3 bucket using CloudFormation
+    Properties:
+      BucketName: mcdns-s3-cloudformation
+      BucketEncryption: 
+        ServerSideEncryptionConfiguration: 
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      VersioningConfiguration:
+        Status: Enabled
+Outputs:
+  S3Bucket:
+    Description: S3 bucket created from a CloudFormation
+    Value: !Ref S3Bucket
