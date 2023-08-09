@@ -7,5 +7,5 @@ Resources:
       BucketName: mcdns-s3-cloudformation
 Outputs:
   S3Bucket:
-    Description: S3 bucket created from a CloudFormation template
+    Description: S3 bucket created from a CloudFormation
     Value: !Ref S3Bucket
